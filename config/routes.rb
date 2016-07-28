@@ -1,12 +1,4 @@
 Contestapp::Application.routes.draw do
-  resources :variants
-  resources :products do
-    collection do
-      get 'import'
-    end
-    resources :variants
-  end
-
   resources :orders do
     collection do
       get 'import'
