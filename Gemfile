@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'shopify_api'
 gem "execjs"
 gem "twitter-bootstrap-rails"
 gem "bootstrap-sass"
