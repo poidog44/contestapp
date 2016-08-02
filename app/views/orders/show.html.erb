@@ -13,13 +13,11 @@
   <dt><strong><%= model_class.human_attribute_name(:last_name) %>:</strong></dt>
   <dd><%= @order.last_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:shopify_order_id) %>:</strong></dt>
-  <dd><%= @order.shopify_order_id %></dd>
+  <dd><%= link_to @order.shopify_order_id, "#" %></dd>
   <dt><strong><%= model_class.human_attribute_name(:order_date) %>:</strong></dt>
-  <dd><%= @order.order_date %></dd>
+  <dd><%= @order.order_date.to_s(:short) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:total) %>:</strong></dt>
   <dd><%= @order.total %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:financial_status) %>:</strong></dt>
-  <dd><%= @order.financial_status %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),
